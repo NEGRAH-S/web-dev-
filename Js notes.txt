@@ -1,0 +1,114 @@
+
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Java Script!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+
+//Some imp code syntax(keyword)
+// How to create variables:
+var x;
+let y;
+
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;
+// initialising using Const 
+const PI = 3.141592653589793;
+PI = 3.14;      // This will give an error
+PI = PI + 10;   // This will also give an error
+
+
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date(“2022-03-25");
+
+//JS function Syntax
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+// Code
+let x = myFunction(4, 3);   // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}
+
+//ARRAY 
+// Syntax for arrays
+const array_name = [item1, item2, ...];      
+//code
+const location = [
+  "shahdara",
+  “Vasant Kunj",
+  “Chandni Chowk"
+];
+const location = [];
+location[0]= "Shahdara";
+location[1]= “Vasant Kunj";
+location[2]= “chandni chowk";
+//Sorting array 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+
+//Modules
+Modules with functions or variables can be stored in any external file.
+There are two types of exports: Named Exports and Default Exports
+<script type="module">
+import message from "./message.js";
+</script>
+//Import from named export
+import { name, age } from "./person.js";
+
+//Import from default export
+import message from “./message.js";
+What is JSON?
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data interchange format
+JSON is language independent *
+JSON is "self-describing" and easy to understand
+The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. Code for reading and generating JSON data can be written in any programming language.
+
+
+
+
+
+{
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+
+//JSON Objects
+JSON objects are written inside curly braces.
+Just like in JavaScript, objects can contain multiple name/value pairs:
+{"firstName":"John", "lastName":"Doe"}
+
+//JSON Arrays
+JSON arrays are written inside square brackets.
+Just like in JavaScript, an array can contain objects:
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+
