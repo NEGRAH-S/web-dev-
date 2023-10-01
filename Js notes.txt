@@ -112,3 +112,11 @@ Just like in JavaScript, an array can contain objects:
   {"firstName":"Peter", "lastName":"Jones"}
 ]
 
+
+// Arrow Function 
+const requestHandler = (req, res) => {
+console.log(req.method, req.url);
+}
+
+// Async JavaScript
+let asyncFn = (a,b) => setTimeout(()=> sum(a,b),1000);
